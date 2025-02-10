@@ -20,48 +20,48 @@ function RegisterForm() {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md"> {}
+    <div className="p-4 bg-white rounded-lg shadow-md"> {}
       <h2 style={{ color: 'red' }}>Registration Form</h2>
       <form onSubmit={handleSubmit}>
         <div className="p-4 rounded-lg shadow-md"> {}
           <label>Recipe Name</label>
           <input
             type="text"
-            value={recipeName}
+            value={recipeName} required
             onChange={(e) => setRecipeName(e.target.value)}
-            className="border-solid border-4 border-gray-600 w-full mb-2 rounded-lg" 
+            className="w-full mb-2 border-4 border-gray-600 border-solid rounded-lg" 
           />
           <label>Ingredients</label>
           <input
             type="text"
-            value={ingredients}
+            value={ingredients} required
             onChange={(e) => setIngredients(e.target.value)}
-            className="border-solid border-4 border-gray-600 w-full mb-2 rounded-lg" 
+            className="w-full mb-2 border-4 border-gray-600 border-solid rounded-lg" 
           />
           <label>Preparation Time (minutes)</label>
           <input
             type="number"
-            value={preparationTime}
+            value={preparationTime} required
             onChange={(e) => setPreparationTime(e.target.value)}
-            className="border-solid border-4 border-gray-600 w-full mb-2 rounded-lg" 
+            className="w-full mb-2 border-4 border-gray-600 border-solid rounded-lg" 
           />
           <label>Chef Name</label>
           <input
             type="text"
             value={chefName}
             onChange={(e) => setChefName(e.target.value)}
-            className="border-solid border-4 border-gray-600 w-full mb-2 rounded-lg" 
+            className="w-full mb-2 border-4 border-gray-600 border-solid rounded-lg" 
           />
           <label>Cooking Date</label>
           <input
             type="date"
             value={cookingDate}
             onChange={(e) => setCookingDate(e.target.value)}
-            className="border-solid border-4 border-gray-600 w-full mb-2 rounded-lg" 
+            className="w-full mb-2 border-4 border-gray-600 border-solid rounded-lg" 
           />
           <button
             type="submit"
-            className="border-red-500 sm:border-double border-4 border-gray-600 bg-black p-2 rounded text-red-500"
+            className="p-2 text-red-500 bg-black border-4 border-red-500 rounded sm:border-double"
           >
             Submit
           </button>
