@@ -18,7 +18,7 @@ setMessage(error.message)
 },[])
 return (
 <>
-<h1 className='text-red-500'>Cooking app management</h1>
+<h1 className='text-red-500'>Online Cooking App Management System</h1>
 <RegisterForm/>
 </>
 )
